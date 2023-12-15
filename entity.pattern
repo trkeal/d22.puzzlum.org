@@ -1,0 +1,2 @@
+entity
+/^"(?<type>item|npc)\=((?<count>[0-9]+)\:|)((?<mood>Mad|Dead|) |)(?<name>([A-Z][a-z ]*){1,2})"$/im

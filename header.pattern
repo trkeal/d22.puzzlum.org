@@ -1,0 +1,2 @@
+header
+/^(?<entity_count>[0-9]+),(?<option_count>[0-9]+),"(?<illustration>[A-Za-z0-9 \']+)"$/im

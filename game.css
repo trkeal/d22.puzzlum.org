@@ -1,0 +1,187 @@
+body {
+	background-image: url(/Sprites/interface/background.png);
+	color: White;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: White;
+	font-size: 1.3em;
+}
+div {
+	font-size: 1.3em;
+}
+
+.paths {
+	width: 60vw;
+	height: 1.3em;
+	text-align: center;
+	height: 10em;
+	width: auto;
+}
+
+.illustration {
+	height: 10em;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+}
+
+.banner {
+	width: 60vw;
+	height: 1.3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.2em;
+}
+.caption {
+	width: 60vw;
+	height: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5.2em;
+}
+.option {
+	width: 60vw;
+	height: 1.3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.3em;
+}
+.debug {
+	width: 60vw;
+	height: auto;
+	text-align: left;
+}
+
+/* Container for the image and text */
+.image-container {
+	position: relative;
+	width: 100%;
+}
+
+/* Style for the image */
+/*
+.image-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+*/
+
+.img-container {
+  max-width: 300px; /* Set your desired maximum width */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.img-container img {
+  width: 100%; /* Make sure the image takes the full width of the container */
+  height: 150px; /* Set your desired default height */
+  object-fit: cover; /* This property is used to handle cases where the aspect ratio of the image doesn't match the container */
+}
+
+/* Style for the npc overlay */
+.npc-overlay {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+/* Style for the item overlay */
+.item-overlay {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+/* Style for the header overlay */
+.header-overlay {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+/*
+<div class="image-container">
+  <img src="{{img}}">
+  <div class="text-overlay">{{caption}}</div>
+</div>
+*/
+
+body {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.sprite.mood.dead {
+	/* Dead mood */
+	/* Adjust the values based on your preference */
+	filter: grayscale(100%) opacity(0.7);
+}
+
+.sprite.mood.mad {
+	/* Mad mood */
+	/* Adjust the values based on your preference */
+	filter: saturate(100%) hue-rotate(0deg);
+}
+
+.img-container {
+	max-width: 7.5em; /* Set your desired maximum width */
+	height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.img-container img {
+	width: 100%; /* Make sure the image takes the full width of the container */
+	height: 5em; /* Set your desired default height */
+	object-fit: cover; /* This property is used to handle cases where the aspect ratio of the image doesn't match the container */
+}
+
+/*
+body {
+    margin: 0;
+    overflow: hidden;
+}
+*/
+
+.sprite {
+	/* Adjust the width of your sprite */
+	/* width: 50px; */
+	/* Adjust the height of your sprite */
+	/* height: 50px; */
+	/* Adjust the background color or use an image for your sprite */
+	/* background-color: blue; */
+	
+	position: absolute;
+}
+
+.sprite:nth-child(2) {
+	/* Adjust the overlap distance */
+	left: 3.5em;
+	/* Ensure this sprite is above the previous one */
+	z-index: 1;
+}
+
+.sprite:nth-child(3) {
+	/* Adjust the overlap distance */
+	left: 7em;
+	/* Ensure this sprite is above the previous ones */
+	z-index: 2;
+}
